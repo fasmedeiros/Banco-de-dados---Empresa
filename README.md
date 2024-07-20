@@ -1,19 +1,23 @@
 # Banco-de-dados---Empresa
+<center>
+  
+```
+                      +-------------------+          +-------------------+
+                      |       Dept        |          |        Emp        |
+                      +-------------------+          +-------------------+
+                      | PK DepNume        | 1      N | PK EmpNume        |
+                      | DepNome           |<---------| EmpNome           |
+                      | DepLoca           |          | EmpGere           |  
+                      | DepOrca           |          | FK DepNume        |
+                      +-------------------+          | EmpAdmi           |
+                                                     | EmpSala           |
+                                                     | EmpComi           |
+                                                     +-------------------+
+                                                     | FK EmpGere        |
+                                                     +-------------------+
+```
+</center>
 
-
-+-------------------+          +-------------------+
-|       Dept        |          |        Emp         |
-+-------------------+          +-------------------+
-| PK DepNume        | 1       N | PK EmpNume        |
-| DepNome           |<---------| EmpNome           |
-| DepLoca           |          | EmpGere           |  
-| DepOrca           |          | FK DepNume        |
-+-------------------+          | EmpAdmi           |
-                               | EmpSala           |
-                               | EmpComi           |
-                               +-------------------+
-                               | FK EmpGere        |
-                               +-------------------+
 
 ```mermaid
 erDiagram
